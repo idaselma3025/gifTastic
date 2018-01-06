@@ -3,7 +3,7 @@ var animalImage;
 var state;
 function displayAnimalGif (){
   var animal = $(this).data("name");
-  var queryURL = "https://api.giphy.com/v1/gifs/search?q="+animal+"&api_key=H5NnYWud8bpvU4ICC178EnuAHbGH056M&limit=10_s";
+  var queryURL = "https://api.giphy.com/v1/gifs/search?q="+animal+"&api_key=H5NnYWud8bpvU4ICC178EnuAHbGH056M&limit=10";
   $.ajax({
     url: queryURL,
     method:'GET'
