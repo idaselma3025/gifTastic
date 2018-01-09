@@ -53,16 +53,17 @@ function renderButtons() {
         }
       }
 
-      
+ 
       $("#submit-animal").on("click", function(event) {
-        event.preventDefault();
-      
-        var animal = $("#add-animal").val().trim();
-
-        animals.push(animal);
-
-        renderButtons();
+            event.preventDefault();
+            var animal = $("#add-animal").val().trim();
+             if (animal!=""){
+            animals.push(animal);
+            renderButtons();
+    }
+       
       });
+
         renderButtons();
        
   $(document).on("click", ".animal", displayAnimalGif);
